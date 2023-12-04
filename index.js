@@ -1,4 +1,3 @@
-// Matriz de objetos representando heróis
 const herois = [
     { nome: "Capitã Marvel", xp: 800 },
     { nome: "Capitão America", xp: 1500 },
@@ -8,8 +7,7 @@ const herois = [
     { nome: "Viuva Negra", xp: 12000 },
   ];
   
-  // Função para determinar o nível do herói com base na XP
-  function determinarNivel(xp) {
+   function determinarNivel(xp) {
     let nivel;
   
     switch (true) {
@@ -43,8 +41,7 @@ const herois = [
   
     return nivel;
   }
-  
-  // Iterar sobre a matriz de heróis e exibir o nível de cada um
+    
   for (let i = 0; i < herois.length; i++) {
     const heroi = herois[i];
     const nivelHeroi = determinarNivel(heroi.xp);
